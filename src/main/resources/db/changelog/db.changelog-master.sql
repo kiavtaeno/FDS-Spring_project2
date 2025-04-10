@@ -23,3 +23,9 @@ CREATE TABLE posts (
     client_id BIGINT NOT NULL,
     CONSTRAINT fk_user FOREIGN KEY (client_id) REFERENCES client(id) ON DELETE CASCADE
 );
+
+CREATE TABLE currencies (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(255),
+    code VARCHAR(5)
+)

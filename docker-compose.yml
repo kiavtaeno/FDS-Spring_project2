@@ -1,13 +1,13 @@
 services:
-#  app:
-#    build: .
-#    container_name: user-service
-#    networks:
-#      - app_network
-#    ports:
-#      - "8069:8069"
-#    depends_on:
-#      - db
+  app:
+    build: .
+    container_name: user-service
+    networks:
+      - app_network
+    ports:
+      - "8069:8069"
+    depends_on:
+      - db
 
   db:
     image: postgres:15
