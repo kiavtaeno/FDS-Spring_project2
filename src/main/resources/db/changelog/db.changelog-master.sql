@@ -27,5 +27,7 @@ CREATE TABLE posts (
 CREATE TABLE currencies (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    code VARCHAR(5)
+    code VARCHAR(5),
+    priceChangeRange DOUBLE PRECISION,
+    description VARCHAR(255)
 )
